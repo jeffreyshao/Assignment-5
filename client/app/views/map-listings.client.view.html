@@ -9,7 +9,7 @@
     https://angular-ui.github.io/angular-google-maps/#!/api/windows
   -->
 
-  <div id="map_canvas" ng-controller="mainCtrl">
+  <div id="map" ng-controller="mainCtrl">
       <ui-gmap-google-map center="map.center" zoom="map.zoom" options="options">
         <ui-gmap-markers ng-repeat="listing in listings" coords="listing.coordinates" idkey=listing._id>
           <ui-gmap-windows>
